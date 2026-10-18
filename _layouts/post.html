@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign dir = page.path | split: '/' | pop | join: '/' %}
+{% assign parent_path = dir | append: '/index.md' %}
+<article>
+  {% unless page.top %}
+    {% assign parent = site.pages | where: 'path', parent_path | first %}
+    {% if parent %}<p class="crumb"><a href="{{ parent.url | relative_url }}">← {{ parent.title }}</a></p>{% endif %}
+  {% endunless %}
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+
+  {% if page.top %}
+    {% assign children = site.pages | where_exp: 'p', 'p.layout == "post"' | where_exp: 'p', 'p.top != true' | sort: 'order' %}
+    {% capture list %}{% for c in children %}{% assign cdir = c.path | split: '/' | pop | join: '/' %}{% if cdir == dir %}<li><a href="{{ c.url | relative_url }}">{{ c.title }}</a></li>{% endif %}{% endfor %}{% endcapture %}
+    {% if list != '' %}
+    <aside class="children">
+      <h2>附录</h2>
+      <ul>{{ list }}</ul>
+    </aside>
+    {% endif %}
+  {% endif %}
+</article>

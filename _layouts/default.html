@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site">
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer class="site">© {{ site.time | date: '%Y' }}</footer>
+  <script>
+    // 同一段里的多张图排成一行，按宽高比分配宽度，高度一致
+    document.querySelectorAll('main p').forEach(function (p) {
+      var imgs = p.querySelectorAll(':scope > img');
+      if (imgs.length < 2 || imgs.length !== p.children.length) return;
+      p.classList.add('gallery');
+      imgs.forEach(function (img) {
+        function fit() { img.style.flex = (img.naturalWidth / img.naturalHeight) + ' 1 0'; }
+        img.complete ? fit() : img.addEventListener('load', fit);
+      });
+    });
+    document.querySelectorAll('main img').forEach(function (img) {
+      img.loading = 'lazy';
+      img.addEventListener('click', function () { window.open(img.src, '_blank'); });
+    });
+  </script>
+</body>
+</html>

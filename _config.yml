@@ -1,0 +1,15 @@
+title: 旅行日记
+description: 在路上的随笔与笔记
+lang: zh-CN
+baseurl: /travel
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+exclude:
+  - tools
+  - README.md
+  - "*.zip"

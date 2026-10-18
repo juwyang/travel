@@ -1,0 +1,104 @@
+:root {
+  --bg: #faf8f4;
+  --fg: #2b2a28;
+  --muted: #7a766e;
+  --accent: #8a5a2b;
+  --rule: #e4dfd5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1a18;
+    --fg: #e6e2da;
+    --muted: #9b968c;
+    --accent: #d9a46a;
+    --rule: #34312c;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Songti SC", "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+main, header.site, footer.site {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header.site {
+  padding-top: 1.5rem;
+  font-size: 0.95rem;
+}
+header.site a { color: var(--muted); text-decoration: none; letter-spacing: 0.1em; }
+
+footer.site {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 2rem 0 2.5rem;
+  letter-spacing: 0.05em;
+}
+h2, h3, h4 { line-height: 1.4; margin: 2.5rem 0 1rem; }
+
+p { margin: 0 0 1.4em; text-align: justify; }
+
+a { color: var(--accent); text-underline-offset: 3px; }
+
+ul, ol { padding-left: 1.4em; }
+li { margin-bottom: 0.6em; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+  cursor: zoom-in;
+}
+p.gallery {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+p.gallery img { min-width: 0; width: 100%; }
+
+/* 窄屏时多图分两行，避免竖图被压得太小 */
+@media (max-width: 520px) {
+  p.gallery { flex-wrap: wrap; }
+  p.gallery img { flex-basis: 40% !important; }
+}
+
+.crumb { margin: 1.5rem 0 0; font-size: 0.9rem; }
+.crumb a { color: var(--muted); text-decoration: none; }
+
+aside.children {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+aside.children h2 { font-size: 1rem; color: var(--muted); margin-top: 0; }
+
+.home .lede { color: var(--muted); }
+.home .posts { list-style: none; padding: 0; }
+.home .posts li { padding: 0.6rem 0; border-bottom: 1px solid var(--rule); font-size: 1.2rem; }
+.home .posts a { text-decoration: none; }
+
+@media (max-width: 520px) {
+  body { font-size: 17px; }
+  h1 { font-size: 1.6rem; }
+}
