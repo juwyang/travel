@@ -102,3 +102,12 @@ aside.children h2 { font-size: 1rem; color: var(--muted); margin-top: 0; }
   body { font-size: 17px; }
   h1 { font-size: 1.6rem; }
 }
+
+video {
+  display: block;
+  width: 100%;
+  max-height: 80vh;
+  margin: 0 auto 1.4em;
+  border-radius: 4px;
+  background: #000;
+}

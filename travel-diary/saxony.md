@@ -2,7 +2,7 @@
 layout: post
 title: "小传"
 note_id: H5uklwfmbqbI
-order: 10
+order: 1
 ---
 
 【萨克森的故事】
@@ -27,7 +27,7 @@ order: 10
 
 - **狮子亨利的倒台**：公元1180年，实力过强的萨克森公爵“狮子亨利”被皇帝废黜，强大的萨克森部落公国被肢解，其原本在德国西北部的核心领土被剥离。 \[[1](https://zh.wikipedia.org/zh-cn/%E8%90%A8%E5%85%8B%E6%A3%AE%E5%85%AC%E5%9B%BD)\]
 - **向东迁移与选帝侯地位**：经过一系列分封与领土演变，“萨克森”的名称随着统治头衔逐步向东南方向移到了易北河上游。公元1423年，**韦廷家族（Wettin）**入主这片土地并获得了“选帝侯”头衔（拥有选举神圣罗马帝国皇帝的权利），开启了该家族对萨克森长达800多年的统治。 \[[1](https://visitsaxony.cn/saxony-in-a-nutshell.html), [2](https://baike.baidu.com/item/%E8%90%A8%E5%85%8B%E6%A3%AE%E5%85%AC%E5%9B%BD/6185598)\]
-- **巴洛克的黄金时代**：17世纪末至18世纪初，萨克森迎来了历史上最耀眼的君主——**“强者”奥古斯特**（Augustus the Strong）。他同时兼任波兰国王，在首府**德累斯顿**大兴土木（修筑茨温格宫、圣母教堂），将其改造为欧洲著名的巴洛克艺术与文化堡垒，史称“易北河畔的佛罗伦萨”。同时，萨克森在此期间还破解了中国瓷器的秘密，建立了欧洲首家硬瓷厂——著名的 [迈森瓷器](https://visitsaxony.cn/saxony-in-a-nutshell.html)。 \[[1](https://www.alange-soehne.com/hk-sc/manufacture/heritage/saxony-under-augustus-the-strong), [2](https://visitsaxony.cn/saxony-in-a-nutshell.html)\]
+- **巴洛克的黄金时代**：17世纪末至18世纪初，萨克森迎来了历史上最耀眼的君主——**“强者”奥古斯特**（Augustus the Strong）。他同时兼任波兰国王，在首府**德累斯顿**大兴土木（修筑茨温格宫、圣母教堂），将其改造为欧洲著名的巴洛克艺术与文化堡垒，史称“易北河畔的佛罗伦萨”。同时，萨克森在此期间还破解了中国瓷器的秘密，建立了欧洲首家硬瓷厂——著名的[迈森瓷器](https://visitsaxony.cn/saxony-in-a-nutshell.html)。 \[[1](https://www.alange-soehne.com/hk-sc/manufacture/heritage/saxony-under-augustus-the-strong), [2](https://visitsaxony.cn/saxony-in-a-nutshell.html)\]
 
 **4. 战火、王国与帝国成员（19世纪 - 20世纪初）**
 
@@ -48,13 +48,13 @@ order: 10
 
 **“强者”奥古斯特绝对是法国国王**[**路易十四**](https://www.google.com/search?kgmid=%2Fm%2F04pwg&q=%E8%B7%AF%E6%98%93%E5%8D%81%E5%9B%9B)**的狂热崇拜者与追随者**。他不仅在政治上渴望模仿路易十四的专制君主形象，在生活品味和城市建设上更是将路易十四视为终生偶像。 \[[1](https://zh.wikipedia.org/zh-tw/%E5%A5%A5%E5%8F%A4%E6%96%AF%E7%89%B9%E4%BA%8C%E4%B8%96_(%E6%B3%A2%E5%85%B0)), [2](https://baike.baidu.com/item/%E5%A5%A5%E5%8F%A4%E6%96%AF%E7%89%B9%E4%BA%8C%E4%B8%96/3799082), [3](https://visitsaxony.cn/famous-brands/august-the-strong.html)\]
 
-![](images/saxony-image.png)
-![](images/saxony-1_image.png)
+![](images/UEEcfJYPd6EN.png)
+![](images/qWFrwufvzQam.png)
 
 奥古斯特对路易十四的崇拜与效仿主要体现在以下几个方面：
 
-- **震撼心灵的年轻之旅**：在奥古斯特年轻时（1687年至1689年间），他尚未继承萨克森选侯之位。他在漫游欧洲期间造访了法王路易十四的凡尔赛宫。凡尔赛宫那无与伦比的奢华排场、宏伟的巴洛克建筑，以及路易十四至高无上的绝对王权，给这位年轻的萨克森王子留下了刻骨铭心的印象。\[ [1](https://visitsaxony.cn/famous-brands/august-the-strong.html), [2](https://zh.wikipedia.org/zh-tw/%E5%A5%A5%E5%8F%A4%E6%96%AF%E7%89%B9%E4%BA%8C%E4%B8%96_(%E6%B3%A2%E5%85%B0))\]
-- **打造“萨克森的凡尔赛”**：回到萨克森执政后，奥古斯特几乎是全面复制凡尔赛宫的模式来改造首府德累斯顿。他修建了极尽奢华的 [茨温格宫](https://visitsaxony.cn/famous-brands/august-the-strong.html)、扩建了德累斯顿王宫，并建立起全欧洲最顶级的珍宝馆“绿穹顶”。他甚至在格罗斯塞德利茨（Großsedlitz）规划了一座规模宏大的“萨克森凡尔赛花园”。 \[[1](https://pinnable.eu/article/court-of-augustus-the-strong), [2](https://visitsaxony.cn/famous-brands/august-the-strong.html), [3](https://news.sina.cn/2017-11-20/detail-ifynwxum6507014.d.html?vt=4)\]
+- **震撼心灵的年轻之旅**：在奥古斯特年轻时（1687年至1689年间），他尚未继承萨克森选侯之位。他在漫游欧洲期间造访了法王路易十四的凡尔赛宫。凡尔赛宫那无与伦比的奢华排场、宏伟的巴洛克建筑，以及路易十四至高无上的绝对王权，给这位年轻的萨克森王子留下了刻骨铭心的印象。\[[1](https://visitsaxony.cn/famous-brands/august-the-strong.html), [2](https://zh.wikipedia.org/zh-tw/%E5%A5%A5%E5%8F%A4%E6%96%AF%E7%89%B9%E4%BA%8C%E4%B8%96_(%E6%B3%A2%E5%85%B0))\]
+- **打造“萨克森的凡尔赛”**：回到萨克森执政后，奥古斯特几乎是全面复制凡尔赛宫的模式来改造首府德累斯顿。他修建了极尽奢华的[茨温格宫](https://visitsaxony.cn/famous-brands/august-the-strong.html)、扩建了德累斯顿王宫，并建立起全欧洲最顶级的珍宝馆“绿穹顶”。他甚至在格罗斯塞德利茨（Großsedlitz）规划了一座规模宏大的“萨克森凡尔赛花园”。 \[[1](https://pinnable.eu/article/court-of-augustus-the-strong), [2](https://visitsaxony.cn/famous-brands/august-the-strong.html), [3](https://news.sina.cn/2017-11-20/detail-ifynwxum6507014.d.html?vt=4)\]
 - **君主形象与情妇政治**：路易十四自称“太阳王”，奥古斯特便将自己包装为“萨克森的海克力斯”（大力神），热衷于在宫廷宴会上表演徒手折断马蹄铁来彰显神力。同时，他也模仿法国宫廷的风气，供养了大量的情妇，并举办动辄持续数月的奢华巴洛克狂欢宴会。 \[[1](https://www.alange-soehne.com/us-en/manufacture/heritage/saxony-under-augustus-the-strong), [2](https://baike.baidu.com/item/%E5%A5%A5%E5%8F%A4%E6%96%AF%E7%89%B9%E4%BA%8C%E4%B8%96/3799082), [3](https://artsandculture.google.com/entity/augustus-ii-the-strong/m01ktmq?hl=en)\]
 - **绝对君主制的追求**：在政治体制上，奥古斯特一生都在努力压制国内的贵族与等级议会，试图在萨克森建立像法国那样高度中央集权的“绝对君主制”。 \[[1](https://baike.baidu.com/item/%E5%A5%A5%E5%8F%A4%E6%96%AF%E7%89%B9%E4%BA%8C%E4%B8%96/3799082), [2](https://zh.wikipedia.org/zh-tw/%E5%A5%A5%E5%8F%A4%E6%96%AF%E7%89%B9%E4%BA%8C%E4%B8%96_(%E6%B3%A2%E5%85%B0))\]
 

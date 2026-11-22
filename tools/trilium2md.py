@@ -128,6 +128,8 @@ def block(node, ctx, depth=0):
         return [ctx["image"](node.find("img").get("src", ""))]
     if name == "img":
         return [ctx["image"](node.get("src", ""))]
+    if name == "video":
+        return [str(node)]
     if name in ("div", "section", "figure", "span") or True:
         out = []
         for c in node.children:
@@ -137,7 +139,7 @@ def block(node, ctx, depth=0):
 
 def html_to_md(html, ctx):
     soup = BeautifulSoup(html, "html.parser")
-    content = soup.select_one(".ck-content") or soup.body
+    content = soup.select_one(".ck-content") or soup.body or soup
     return "\n\n".join(b for b in block(content, ctx) if b.strip()) + "\n"
 
 
