@@ -59,8 +59,30 @@ def inline(node, ctx):
         href = node.get("href", "")
         return f"[{inner.strip()}]({href})" if href else inner
     if name == "img":
-        return "\n" + ctx["image"](node.get("src", "")) + "\n"
+        md, floated = img_md(node, ctx)
+        # 浮动图片留在文字里（文字绕排），其余图片单独成行
+        return md if floated else "\n" + md + "\n"
     return inner
+
+
+def img_md(img, ctx, holder=None):
+    """图片 + Trilium 的版式（左/右浮动、宽度百分比），返回 (markdown, 是否浮动)。"""
+    md = ctx["image"](img.get("src", ""))
+    if not md:
+        return "", False
+    holder = holder or img
+    classes = holder.get("class", []) + img.get("class", [])
+    attrs = []
+    floated = False
+    for side in ("left", "right"):
+        if f"image-style-align-{side}" in classes or (side == "right" and "image-style-side" in classes):
+            attrs.append(f".float-{side}")
+            floated = True
+            break
+    m = re.search(r"width:\s*([\d.]+%)", holder.get("style", "") + ";" + img.get("style", ""))
+    if m:
+        attrs.append(f'style="width:{m.group(1)}"')
+    return (md + "{: " + " ".join(attrs) + "}" if attrs else md), floated
 
 
 def tidy(md):
@@ -90,7 +112,7 @@ def block(node, ctx, depth=0):
         # 文字和图片拆成不同段落，连续的图片留在同一段里，样式会把它们排成一行
         groups = []
         for line in t.split("\n") if t else []:
-            is_img = line.startswith("![")
+            is_img = bool(re.fullmatch(r"(!\[[^\]]*\]\([^)]*\)(\{:[^}]*\})?\s*)+", line)) and ".float-" not in line
             if groups and groups[-1][0] == is_img:
                 groups[-1][1].append(line)
             else:
@@ -125,9 +147,9 @@ def block(node, ctx, depth=0):
     if name in ("table", "figure") and node.find("table"):
         return [str(node)]
     if name == "figure" and node.find("img"):
-        return [ctx["image"](node.find("img").get("src", ""))]
+        return [img_md(node.find("img"), ctx, holder=node)[0]]
     if name == "img":
-        return [ctx["image"](node.get("src", ""))]
+        return [img_md(node, ctx)[0]]
     if name == "video":
         return [str(node)]
     if name in ("div", "section", "figure", "span") or True:

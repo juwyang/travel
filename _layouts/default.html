@@ -19,7 +19,7 @@
     // 同一段里的多张图排成一行，按宽高比分配宽度，高度一致
     document.querySelectorAll('main p').forEach(function (p) {
       var imgs = p.querySelectorAll(':scope > img');
-      if (imgs.length < 2 || imgs.length !== p.children.length) return;
+      if (imgs.length < 2 || imgs.length !== p.children.length || p.querySelector('.float-left, .float-right')) return;
       p.classList.add('gallery');
       imgs.forEach(function (img) {
         function fit() { img.style.flex = (img.naturalWidth / img.naturalHeight) + ' 1 0'; }
