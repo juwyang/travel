@@ -118,3 +118,15 @@ p.gallery img { width: 100% !important; }
 @media (max-width: 520px) {
   img.float-left, img.float-right { width: 45% !important; }
 }
+
+/* 语言切换 */
+header.site { display: flex; justify-content: space-between; align-items: baseline; }
+header.site a.lang-switch { letter-spacing: 0; }
+
+/* 英文页面 */
+html[lang="en"] body {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+html[lang="en"] p { text-align: left; hyphens: auto; }
+html[lang="en"] h1 { letter-spacing: 0; }

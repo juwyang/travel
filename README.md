@@ -22,6 +22,12 @@
    git push
    ```
 
+## 英文版
+
+`en/` 下是英文翻译（`en/travel-diary/*.md`），图片直接引用中文版的 `travel-diary/images/`。
+英文版是手工翻译的，脚本不会动它，也不会自动更新：中文改了以后，需要把改动部分重新翻译到对应的英文文件里。
+每个页面右上角的「English / 中文」链接会自动指向另一种语言的同名页面。
+
 ## 新增一篇文章
 
 在 Trilium 里新建一个顶层笔记并导出，运行脚本即可。想要好看的网址，先在 `tools/slugs.json` 里把它的 noteId（导出 zip 中 `!!!meta.json` 里能看到）映射成英文名，例如 `"abc123": "nordic-trip"`。
@@ -31,5 +37,6 @@
 - `travel-diary/index.md` — 正文（脚本生成，别手改，下次导出会被覆盖）
 - `travel-diary/*.md` — 子笔记（小传、希腊罗马神话……）
 - `travel-diary/images/`, `travel-diary/media/` — 图片和视频
+- `en/` — 英文版（手工翻译）
 - `_layouts/`, `assets/style.css` — 页面模板和样式
 - `tools/` — 转换脚本，不会发布到网站上

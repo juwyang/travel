@@ -1,5 +1,7 @@
 title: 旅行日记
 description: 在路上的随笔与笔记
+title_en: Travel Notes
+description_en: Essays and notes from the road
 lang: zh-CN
 baseurl: /travel
 
@@ -14,3 +16,9 @@ exclude:
   - tools
   - README.md
   - "*.zip"
+
+defaults:
+  - scope:
+      path: "en"
+    values:
+      lang: en
