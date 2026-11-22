@@ -77,10 +77,8 @@ p.gallery {
 }
 p.gallery img { min-width: 0; width: 100%; }
 
-/* 窄屏时多图分两行，避免竖图被压得太小 */
 @media (max-width: 520px) {
-  p.gallery { flex-wrap: wrap; }
-  p.gallery img { flex-basis: 40% !important; }
+  p.gallery { gap: 3px; }
 }
 
 .crumb { margin: 1.5rem 0 0; font-size: 0.9rem; }

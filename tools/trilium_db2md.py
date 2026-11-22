@@ -7,7 +7,7 @@
 - 只读打开 document.db（先拷一份快照到内存），Trilium 开着也没关系
 - 笔记 -> <slug>/index.md，所有子孙文本笔记 -> <slug>/<子slug>.md，空笔记跳过
 - 图片 -> <slug>/images/<noteId>.jpg|png（缩到 1600px，去掉 EXIF）
-- 视频附件 -> <slug>/media/<noteId>.mp4，以 <video> 嵌入：
+- 视频附件（EMBED_VIDEOS = True 时）-> <slug>/media/<noteId>.mp4，以 <video> 嵌入：
   正文里有指向该附件的链接时放在链接处，否则放在它在 Trilium 树里前一张图片的后面
 - 每次运行都会清空并重建 <slug>/ 目录
 """
@@ -26,6 +26,7 @@ from trilium2md import ROOT, SLUGS, html_to_md, save_image  # noqa: E402
 
 DB = Path(os.environ.get("TRILIUM_DATA_DIR", Path.home() / "AppData/Roaming/trilium-data")) / "document.db"
 DEFAULT_ROOT = "x9upcknrOBUy"
+EMBED_VIDEOS = False  # 视频附件是否放进网页；改成 True 即恢复
 
 
 def open_db():
@@ -104,7 +105,7 @@ def export(root_id):
         soup = BeautifulSoup(tree.text(nid), "html.parser")
 
         # 视频附件
-        videos = [k for k in kids if k["type"] == "file" and (k["mime"] or "").startswith("video/")]
+        videos = [k for k in kids if EMBED_VIDEOS and k["type"] == "file" and (k["mime"] or "").startswith("video/")]
         for v in videos:
             dest = top / "media" / f"{v['id']}.mp4"
             dest.parent.mkdir(exist_ok=True)
